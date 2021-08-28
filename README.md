@@ -20,3 +20,7 @@ Performing Inverted Index on Mahabharta text file.
 9. hadoop jar '/home/hadoop/Desktop/InvertedIndexMr/JarFilename' InvertedIndexMR /InvertedIndexMR/Input/Data /InvertedIndexMR/Output
 
 10. hadoop dfs -cat /InvertedIndexMR/Output/*
+
+Splitted the file into sections using:
+
+<b>csplit -z mahabharta.txt /sec_/ '{*}'</b>
